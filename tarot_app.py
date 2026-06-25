@@ -8,7 +8,7 @@ from deep_translator import GoogleTranslator
 st.set_page_config(page_title="운명의 타로 상담소", layout="wide")
 translator = GoogleTranslator(source='en', target='ko')
 
-BASE_DIR = r"D:\tarot"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_PATH = os.path.join(BASE_DIR, "tarot-images.json")
 TXT_PATH = os.path.join(BASE_DIR, "tarot_data.txt")
 BACK_IMAGE = os.path.join(BASE_DIR, "back_tarot_image.png")
